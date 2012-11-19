@@ -1,0 +1,218 @@
+html,body,div,span,ul,ol,li,h1,h2,h3,h4,h5,h6,input,p,table,tr,th,td,form,dl,dt,dd{margin:0;padding:0;font-family:'Segoe UI', Tahoma, sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+ol,ul,li{list-style:none;}
+em,strong{font-style:normal;font-weight:normal}
+img{border:0;}
+table{border-collapse:collapse;border-spacing:0;}
+input,select,button{vertical-align:middle;}
+html{width:100%;height:100%;}
+body{font-size:12px;color:#333;cursor:default;}
+a{color:#333;text-decoration:none;outline:none;}
+a:hover{color:#333;text-decoration:underline;}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:".";clear:both;height:0;}
+*html .clearfix{zoom:1;}
+*:first-child+html .clearfix{zoom:1;}
+.singleline{overflow:hidden;white-space:nowrap;word-break:break-all;text-overflow:ellipsis;}
+input, textarea{color:#000;}
+h1 {
+    font-size: 1.5em;
+}
+thead {
+    -webkit-border-after: 1px solid #999;
+}
+thead th,
+tbody td {
+    text-align: center;
+    padding: 5px 15px;
+}
+tbody td:last-child {
+    white-space: nowrap;
+}
+.com_nav {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 155px;
+    z-index: 3;
+    height: 100%;
+    background: white;
+}
+.com_nav button {
+    background-color: white;
+    border: 0;
+    color: #999;
+    cursor: pointer;
+    font: inherit;
+    line-height: 17px;
+    margin: 6px 0;
+    padding: 0;
+}
+.com_nav h1 {
+    -webkit-margin-after: 1em;
+    -webkit-margin-before: 21px;
+    -webkit-margin-start: 23px;
+    color: #5C6166;
+}
+.com_nav ul {
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+}
+.com_nav ul li {
+    -webkit-border-start: 6px solid transparent;
+    -webkit-padding-start: 18px;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+.com_nav ul li:hover {
+    color: #777;
+}
+.com_nav ul li.selected {
+    -webkit-border-start-color: rgb(78, 87, 100);
+    cursor: default;
+    pointer-events: none;
+}
+.com_nav ul li.selected > button {
+    color: #464E5A;
+}
+.header {
+    -webkit-border-after: 1px solid #eee;
+    position: fixed;
+    width: 100%;
+    min-width: 738px;
+    left: 155px;
+    top: 0;
+    background: rgba(255, 255, 255, .8);
+}
+.header > h1 {
+    padding: 21px 0 13px;
+}
+.header > button {
+    position: absolute;
+    left: 680px;
+    bottom: 10px;
+}
+.panel {
+    -webkit-margin-start: 155px;
+    min-width: 738px;
+    min-height: 100%;
+    padding-top: 80px;
+}
+.pop button,
+.header button,
+.panel button {
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    background-image: -webkit-linear-gradient(#EDEDED, #EDEDED 38%, #DEDEDE);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.75);
+    color: #666;
+    font: inherit;
+    margin: 0 1px 0 0;
+    text-shadow: 0 1px 0 #F0F0F0;
+    -webkit-padding-end: 10px;
+    -webkit-padding-start: 10px;
+}
+.pop button:hover,
+.header button:hover,
+.panel button:hover {
+    background-image: -webkit-linear-gradient(#F0F0F0, #F0F0F0 38%, #E0E0E0);
+    border-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+    color: black;
+}
+.pop button:active,
+.header button:active,
+.panel button:active {
+    background-image: -webkit-linear-gradient(#E7E7E7, #E7E7E7 38%, #D7D7D7);
+    box-shadow: none;
+    text-shadow: none;
+}
+.pop button.green,
+.header button.green,
+.panel button.green {
+    background-image: -webkit-linear-gradient(#9AE524, #9AE524 38%, #8CD625);
+    border: 1px solid #61CF12;
+    color: white;
+    text-shadow: 0 1px 0 #61CF12;
+}
+.pop button.red,
+.header button.red,
+.panel button.red {
+    background-image: -webkit-linear-gradient(#D4440E, #D4440E 38%, #CE2F15);
+    border: 1px solid #b31903;
+    color: white;
+    text-shadow: 0 1px 0 #b31903;
+}
+.pop {
+    -webkit-border-radius: 3px;
+    -webkit-box-orient: vertical;
+    -webkit-transition: 200ms -webkit-transform;
+    background: white;
+    box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
+    color: #333;
+    display: -webkit-box;
+    min-width: 400px;
+    max-width: 100%;
+    padding: 10px 20px 20px 20px;
+    position: relative;
+    z-index: 11;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.pop.transparent {
+    -webkit-transform: scale(0.99) translateY(-20px);
+}
+.pop > div.closebtn {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAZElEQVQ4y2P4//8/A7Uxw6ih9DO0qKgIhvmR2Bhi5Bg6DYjPA7EokoEg9iWoHMmG8kM1/4fSokgGwsT4yXEpuiHolpAdpsgGoxg4qAyluvdpFlEz0b0LZV+Fyg2CxD9aSo0AQwGVuKSgRDiuoQAAAABJRU5ErkJggg==');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 24px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 24px;
+}
+.pop > div.closebtn:hover {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAA1klEQVQ4y2P4//8/A7Uxw9A0tKioCB3zA3E1EK8D4odAfAOIlwJxJhDzIKslaCiU7QHET4D4Pw4MkrOH6SPGpbEwzVVVVRgGIon9BGIbYgyVhir+f/To0f9Pnjz5X1dXBzcQxH727BlYDsnFnIQMnQxzDUgzCIBokGEwA2FiSC5OI2ToPXRXwQxBtwQpSLbgM5QTPfyQDcZhIAjfxmcoGy0MJdf72wckouBJ6vjx4xiuArFfvHgBlkNKUjzEJP4Eaid+YrPpc1KzKaECJYfoAmWEF9LUwgBlLaNcEfbfxwAAAABJRU5ErkJggg==');
+}
+.pop p {
+    line-height: 24px;
+    padding: 10px 0;
+}
+.pop table {
+    margin: 78px auto;
+}
+.pop input {
+    border: 1px solid #BFBFBF;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #444;
+    font: inherit;
+    margin: 0;
+    min-height: 2em;
+    padding: 3px;
+    padding-bottom: 4px;
+    width: 120px;
+}
+.pop input:focus {
+    -webkit-transition: border-color 200ms;
+    border-color: #4D90FE;
+    outline: none;
+}
+.mask {
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-transition: 200ms opacity;
+    background-color: rgba(255, 255, 255, 0.75);
+    bottom: 0;
+    display: -webkit-box;
+    left: 0;
+    overflow: auto;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
